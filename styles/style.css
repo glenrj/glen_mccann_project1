@@ -4,29 +4,173 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+/* colours */
+
+/* white: #fcfcfc
+lightGreen: #c3d3cb
+black: #000
+darkGreen: #152d20 */
+
+
+/* global styles */
+
 body {
     font-size: 20px;
 }
 
 .wrapper {
-    max-width: 1200px;
+    max-width: 1600px;
+    /* I got this number from the design file being 1600px wide */
 }
 
 a:visited {
-    color: grey;
+    color: white;
     /* A MADE UP COLOUR WHILE WORKING OFFLINE ^ */
 }
 
+a {
+    text-decoration: none;
+}
+
+i {
+    color: white;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+h2 {
+    color: white;
+    font-family: "Fredericka the Great", serif;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.button {
+    font-family: "Cormorant Garamond", serif;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    color: #152d20;
+    background: white;
+    padding: 17px 15.5px;
+    font-weight: 600;
+}
+
+
+/* header styles */
+
 header {
-    border: 2px solid teal;
+    /* border: 2px solid mediumaquamarine; */
     background: url(../assets/tiger@2x.jpg) center center;
     height: 100vh;
     background-size: cover;
+    padding-top: 1px;
 }
 
-.topNav ul {
-    list-style: none;
+.topNav {
+    margin-left: 10%;
+    margin-top: 24px;
+}
+
+.topNav a {
+    margin-right: 23px;
+    font-size: 1.1rem;
+    font-family: "Cormorant Garamond", serif;
+    text-transform: uppercase;
     color: white;
-    /* GLEN CHANGE THIS COLOUR IT'S JUST WHITE FOR NOW AS YOU WORK OFFLINE */
+    list-style: none;
 }
 
+h1 {
+    font-family: "Fredericka the Great", serif;
+    font-size: 6rem;
+    color: white;
+    width: 50%;
+    text-align: center;
+    text-transform: uppercase;
+    float: right;
+    line-height: 117px;
+}
+
+.socialNav {
+    text-align: center;
+    display: inline-block;
+    float: right;
+    clear: both;
+    margin-right: 49px;
+    padding-top: 15%;
+}
+
+.socialNav li {
+    margin-bottom: 5px;
+}
+
+
+/* suzie's story styles */
+
+.suzie {
+    background: #152d20;
+    padding-top: 1px;
+}
+
+
+.suzie .content,
+.friends .content {
+    padding: 10%;
+}
+
+.suzie .image {
+    width: 40%;
+    float: left;
+    margin-right: 4%
+}
+
+.suzie .description {
+    width: 56%;
+    color: white;
+    float: left;
+}
+
+.suzie .description h2 {
+    margin: 0;
+}
+
+.suzie .description p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: light;
+    line-height: 29px;
+    margin-bottom: 32px;
+}
+
+/* meet our friends styles */
+
+
+.friends {
+    background: #c3d3cb;
+    padding-top: 1px;
+}
+
+.friends h2 {
+    color: #152d20;
+    text-align: center;
+    width: 36.3%;
+    margin: 0 auto;
+    margin-bottom: 90px;
+}
+
+.friends .image {
+    width: calc(33.3% - 3%);
+    margin-right: 3%;
+    float: left;
+}
+
+.friends .image:nth-child(4) {
+    margin: 0px;
+}

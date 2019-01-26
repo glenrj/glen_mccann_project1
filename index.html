@@ -5,19 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Animal Refuge</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,600|Fredericka+the+Great|Roboto:300" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <!-- HEADER -->
-   <header class="wrapper">
+   <header class="wrapper clearfix">
        <!-- main nav bar -->
        <nav class="topNav">
            <ul>
                <li>
-                   <a href="">Home</a>
-                   <a href="">About</a>
-                   <a href="">Blog</a>
-                   <a href="">Contact</a>
+                   <a href="#">Home</a>
+                   <a href="#">About</a>
+                   <a href="#">Blog</a>
+                   <a href="#">Contact</a>
                </li>
            </ul>
        </nav>
@@ -26,12 +29,10 @@
        <!-- social media nav bar -->
        <nav class="socialNav">
            <ul>
-               <li>
-                   <a href=""></a>
-                   <a href=""></a>
-                   <a href=""></a>
-                   <a href=""></a>
-               </li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-snapchat-ghost"></i></a></li>
+                <li></li><a href="#"><i class="fab fa-twitter"></i></a></li>
            </ul>
        </nav>
    </header>
@@ -39,24 +40,30 @@
    <main>
        <!-- Suzie's Story -->
         <section class="suzie wrapper">
-            <div class="content">
+            <div class="content clearfix">
                 <div class="image">
-                    <img src="assets/suzie@3x.jpg" alt="Suzie the tabby cat lying on a pillow and looking at the camera.">
+                    <img src="assets/suzie@3x.jpg" alt="Suzie the bengal cat lying on a pillow and looking at the camera.">
                 </div>
                 <div class="description">
                     <h2>Suzie's Story</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor nulla elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus nulla pulvinar tortor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor nulla elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus nulla pulvinar tortor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor nulla el. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor nulla elementum eleifend.</p>
-                    <a href="" class="button">Read More</a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor nulla elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus nulla pulvinar tortor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor nulla elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus nulla pulvinar tortor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor nulla el. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor nulla.</p>
+                    <a href="#" class="button">Read More</a>
                 </div>
             </div>
         </section>
         <!-- Some of our Friends -->
         <section class="friends wrapper">
-            <h2>Some of Our Friends</h2>
-            <div class="image">
-                <img src="assets/lizard@3x.jpg" alt="A green lizard holding onto a branch.">
-                <img src="assets/sheep@3x.jpg" alt="A sheep looking at the camera with more sheep in the background.">
-                <img src="assets/parrot@3x.jpg" alt="A parrot sitting on a branch and eating some food from their hand.">
+            <div class="content clearfix">
+                <h2>Some of Our Friends</h2>
+                <div class="image">
+                    <img src="assets/lizard@3x.jpg" alt="A green lizard holding onto a branch.">
+                </div>
+                <div class="image">
+                    <img src="assets/sheep@3x.jpg" alt="A sheep looking at the camera with more sheep in the background."> 
+                </div>
+                <div class="image">
+                    <img src="assets/parrot@3x.jpg" alt="A parrot sitting on a branch and eating some food from their hand.">
+                </div>
             </div>
         </section>
         <!-- Section of Icons/Links -->
@@ -81,7 +88,7 @@
                 <div class="preview">
                     <h3>Fascinating Facts about Zebras</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor a elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus. Vestibulum vitae tincidunt sem, a blandit sem. Quisque interdum orci.</p>
-                    <a href="" class="button">Read More</a>
+                    <a href="#" class="button">Read More</a>
                 </div>
                 <div class="image">
                     <img src="assets/zebra@3x.jpg" alt="Two zebras facing each other, as one looks at the camera.">
@@ -95,24 +102,27 @@
                 <div class="preview">
                     <h3>The Bond Between Animals and Humans</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor a elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus. Vestibulum vitae tincidunt sem, a blandit sem. Quisque interdum orci.</p>
-                    <a href="" class="button">Read More</a>
+                    <a href="#" class="button">Read More</a>
                 </div>
             </div>
         </section>
     </main>
     <!-- FOOTER -->
     <footer>
+        <!-- top section of the footer -->
         <div class="footerMain">
+            <!-- footer nav/left -->
             <div class="footerSection">
                 <ul>
                     <li>
-                        <a href="">Home</a>
-                        <a href="">Blog</a>
-                        <a href="">Gallery</a>
-                        <a href="">Content</a>
+                        <a href="#">Home</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Gallery</a>
+                        <a href="#">Content</a>
                     </li>
                 </ul>
             </div>
+            <!-- subscribe/center -->
             <div class="footerSection">
                 <h3>Stay Updated</h3>
                 <p>Subscribe to our newsletter to stay updated.</p>
@@ -121,6 +131,7 @@
                     <input type="submit" value="Subscribe">
                 </form>
             </div>
+            <!-- contact/right -->
             <div class="footerSection">
                 <h3>Contact</h3>
                 <ul>
@@ -130,6 +141,7 @@
                 </ul>
             </div>
         </div>
+        <!-- lower section of the footer -->
         <div class="copyright">
             <p>Copyright © 2019 HackerYou</p>
         </div>
