@@ -21,6 +21,7 @@ body {
 .wrapper {
     max-width: 1600px;
     /* I got this number from the design file being 1600px wide */
+    margin: 0 auto;
 }
 
 a:visited {
@@ -120,10 +121,9 @@ h1 {
 .socialNav {
     text-align: center;
     display: inline-block;
-    float: right;
-    clear: both;
-    margin-right: 49px;
-    padding-top: 15%;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
 }
 
 .socialNav li {
@@ -231,25 +231,31 @@ h1 {
 .image {
     width: 50%;
     float: left;
+}
 
+.image img {
+    object-fit: cover;
+    display: block;
 }
 
 .blogTextContainer {
     width: 50%;
     float: left;
-    height: 100%;
 }
 
 .blogText1 {
     padding-left: 10%;
     padding-right: 6%;
-    vertical-align: middle;
 }
 
 .blogText2 {
     padding-right: 10%;
     padding-left: 6%;
     vertical-align: middle;
+}
+
+.blogText {
+
 }
 
 .blogText p {
@@ -330,11 +336,6 @@ h4,
 .footerRight {
     text-align: right;
 }
-
-
-
-
-
 
 .copyright {
     width: 100%;
