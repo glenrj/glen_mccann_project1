@@ -69,6 +69,7 @@ h3 {
     background: white;
     padding: 17px 15.5px;
     font-weight: 600;
+    line-height: 1.61;
 }
 
 /* styles for multiple sections  */
@@ -105,6 +106,7 @@ header {
     text-transform: uppercase;
     color: white;
     list-style: none;
+    line-height: 1.32;
 }
 
 h1 {
@@ -115,7 +117,7 @@ h1 {
     text-align: center;
     text-transform: uppercase;
     float: right;
-    line-height: 117px;
+    line-height: 0.98;
 }
 
 .socialNav {
@@ -153,8 +155,8 @@ h1 {
 .suzie .description p {
     font-family: 'Roboto', sans-serif;
     font-weight: light;
-    line-height: 29px;
     margin-bottom: 32px;
+    line-height: 1.45;
 }
 
 .suzie .button {
@@ -220,9 +222,6 @@ h1 {
 
 /* blog section styles */
 
-/* .blog {
-    padding-top: 1px;
-} */
 
 .post {
     width: 100%;
@@ -240,6 +239,14 @@ h1 {
 
 .blogTextContainer {
     width: 50%;
+    /* float: left; */
+}
+
+.zebra {
+    float: right;
+}
+
+.blogTextContainer2 {
     float: left;
 }
 
@@ -255,13 +262,16 @@ h1 {
 }
 
 .blogText {
-
+    padding-top: 10%;
+    padding-bottom: 10%;
+    
 }
 
 .blogText p {
     font-family: 'Roboto', sans-serif;
     font-weight: light;
     margin-bottom: 50px;
+    line-height: 1.45;
 }
 
 .blogText .button {
@@ -288,7 +298,7 @@ h4,
 
 
 .footerMain {
-    padding: 10%;
+    padding: 8%;
 }
 
 .footerSection {
@@ -302,6 +312,7 @@ h4,
     font-family: 'Roboto', sans-serif;
     font-weight: light;
     margin-top: 15px;
+    line-height: 1.45;
 }
 
 .footerLeft,
@@ -350,3 +361,39 @@ h4,
 .copyright p {
     margin: 0;
 }
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1250px) {
+    .blogText {
+        padding-top: 5%;
+    }
+}
+        
+@media (max-width: 1150px) {
+    .blogText {
+        padding-bottom: 0;
+    }
+
+    .blogText h3 {
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 1094px) {
+    .blogTextContainer,
+    .image {
+        float:none;
+        width: 100%;
+    }
+
+    .blogText {
+        padding-top: 10%;
+        padding-bottom: 10%;
+        text-align: center;
+    }
+}
+
+
+
