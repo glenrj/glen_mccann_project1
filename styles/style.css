@@ -4,15 +4,15 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+/* visually hidden snippet */
 .visuallyhidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
 
-/* colours */
-
+/* COLOURS */
 /* white: #fcfcfc
 lightGreen: #c3d3cb
 black: #000
-darkGreen: #152d20 */
-
+darkGreen: #152d20
+hover: navajowhite #FFDEAD */
 
 /* global styles */
 
@@ -26,15 +26,13 @@ body {
     margin: 0 auto;
 }
 
-a:visited {
-    color: white;
-}
-
-
 a {
     text-decoration: none;
 }
 
+a:visited {
+    color: white;
+}
 
 i {
     color: white;
@@ -63,7 +61,8 @@ h3 {
     font-size: 1.75rem;
     text-transform: uppercase;
 }
-/* styles for multiple sections  */
+
+/* general styles for multiple sections  */
 
 .suzie,
 .spotlight {
@@ -120,8 +119,8 @@ footer a:hover {
 }
 
 /* skip link styles */
-/* basic styles from notes, updated to match site */
 
+/* basic styles taken from class notes and updated to match site  */
 .skip-link {
   position: absolute;
   left: -1000px;
@@ -144,7 +143,6 @@ footer a:hover {
 /* header styles */
 
 header {
-    /* border: 2px solid mediumaquamarine; */
     background: url(../assets/tiger@2x.jpg) center center;
     height: 100vh;
     background-size: cover;
@@ -228,8 +226,11 @@ h1 {
     color:  #152d20;
 }
 
-/* meet our friends styles */
+.blogText .button {
+    background: #152d20;
+}
 
+/* meet our friends section styles */
 
 .friends {
     background: #c3d3cb;
@@ -254,11 +255,9 @@ h1 {
     margin: 0px;
 }
 
-/* Spotlight section styles */
 
-.spotlightItem .content {
-    width: 70%;
-}
+/* spotlight section styles */
+
 .spotlightItem {
     float: left;
     width: calc(33.3% - 2%);
@@ -269,6 +268,10 @@ h1 {
     text-transform: uppercase;
     font-family: 'Cormorant Garamond', serif;
     font-weight: 600;
+}
+
+.spotlightItem .content {
+    width: 70%;
 }
 
 .spotlightItem:nth-child(3) {
@@ -285,8 +288,8 @@ h1 {
     margin: 0 auto;
 }
 
-/* blog section styles */
 
+/* blog section styles */
 
 .post {
     width: 100%;
@@ -297,6 +300,10 @@ h1 {
     float: left;
 }
 
+.zebra {
+    float: right;
+}
+
 .image img {
     object-fit: cover;
     display: block;
@@ -304,32 +311,18 @@ h1 {
 
 .blogTextContainer {
     width: 50%;
-    /* float: left; */
-}
-
-.zebra {
-    float: right;
 }
 
 .blogTextContainer2 {
     float: left;
 }
 
-.blogText1 {
-    padding-left: 10%;
-    padding-right: 6%;
+.blogText {
+    padding: 10% 6% 10% 10%;  
 }
 
 .blogText2 {
-    padding-right: 10%;
-    padding-left: 6%;
     vertical-align: middle;
-}
-
-.blogText {
-    padding-top: 10%;
-    padding-bottom: 10%;
-    
 }
 
 .blogText p {
@@ -337,10 +330,6 @@ h1 {
     font-weight: light;
     margin-bottom: 50px;
     line-height: 1.45;
-}
-
-.blogText .button {
-    background: #152d20;
 }
 
 
@@ -360,7 +349,6 @@ h4,
     margin: 0px 0px;
     line-height: 1.45;
 }
-
 
 .footerMain {
     padding: 8%;
@@ -436,8 +424,7 @@ h4,
 
 /* MEDIA QUERIES */
 
-
-
+/* max 1250px */
 @media (max-width: 1250px) {
     .blogText {
         padding-top: 5%;
@@ -451,8 +438,10 @@ h4,
         padding: 8% 3%;
     }
 }
-        
+   
+/* max 1170px */
 @media (max-width: 1170px) {
+    /* blogs */
     .blogText {
         padding-bottom: 0;
     }
@@ -462,16 +451,20 @@ h4,
     }
 }
 
+/* max 1094px */
 @media (max-width: 1094px) {
-    .suzie .image  {
+    /* suzie's story */
+    .suzie .image,
+    .suzie .description  {
         float: none;
-        margin: 0 auto;
         width: 80%;
+    }
+    
+    .suzie .image {
+        margin: 0 auto;
     }
 
     .suzie .description {
-        float: none;
-        width: 80%;
         margin: 5% auto;
     }
 
@@ -484,11 +477,13 @@ h4,
         /* I was trying to center this with margin: 0 auto but I was having trouble so this is 50% - half the width of the button */
     }
 
+    /* some of our friends section */
     .friends h2 {
         width: 70%;
         max-width: 310px;
     }
 
+    /* blogs */
     .blogTextContainer,
     .image {
         float:none;
@@ -501,6 +496,7 @@ h4,
         text-align: center;
     }
 
+    /* footer */
     .footerLeft {
         width: 20%;
     }
@@ -512,14 +508,16 @@ h4,
     .email {
         width: 50%;
     }
-
-    
 }
 
+/* max 910px */
 @media (max-width: 910px) {
-    .topNav {
+    /* header */
+    .topNav,
+    .socialNav {
         display: none;
     }
+
     h1 {
         font-size: 3.5rem;
         float: left;
@@ -528,22 +526,17 @@ h4,
         margin-top: 20px;
     }
 
-    .socialNav {
-        display: none;
-    }
-
     .hamburgerNav {
         display: block;
     }
-
-    .suzie .image{
-        width: 90%;
-    }
-
+    
+    /* suzie's story */
+    .suzie .image,
     .suzie .description {
         width: 90%;
     }
 
+    /* footer */
     .footerSection,
     .footerRight {
         float: none;
@@ -577,81 +570,97 @@ h4,
     }
 }
 
+/* max 850px */
 @media (max-width: 850px) {
+    /* header */
     header {
-        background-position: 40% center;
+        background-position: 35% center;
     }
 
+    /* some of our friends section */
     .friends .image:nth-child(4) {
         display: none;
     }
+
     .friends .image {
-    width: calc(50% - 3%);
-    margin-right: 3%;
-    float: left;
+        width: calc(50% - 3%);
+        margin-right: 3%;
+        float: left;
     }
 
-    .spotlightItem {
+    /* spotlight section */
+    .spotlightItem,
+    .spotlightItem:nth-child(3) {
         float: none;
         margin: 0 auto;
-        /* text-align: center; */
         margin-bottom: 50px;
         width: 50%;
     }
-
-    .spotlightItem:nth-child(3) {
-    margin: 0 auto;
-    }
 }
 
+/* max 750px */
 @media (max-width: 750px) {
+    /* header */
     h1 {
         font-size: 2.5rem;
         width: 25%;
         min-width: 180px;
     }
 
+    /* suzie's story */
     .suzie h2 {
         font-size: 1.9rem;
     }
 
-    .suzie .description {
-        font-size: 0.9rem;
-    }
 }
 
+/* max 550px */
 @media (max-width: 550px) {
+    /* some of our friends section */
     .friends h2 {
         font-size: 1.9rem;
         width: 90%;
     }
-
+    
+    /* spotlight section */
     .spotlightItem p {
         font-size: 1.35rem;
     }
-
+    
     .spotlightItem i {
         font-size: 3.5rem;
     }
-
+    
+    /* footer */
     .email,
     .subscribe {
         font-size: 0.9rem;
     }
-
+    
     .copyright,
     .footerRight li {
-        font-size: 0.7rem;
+        font-size: 1.15rem;
     }
 
+    .copyright {
+        font-size: 0.9rem;
+    }
 }
 
+/* max 500px */
 @media (max-width: 500px) {
+    /* header */
     h1 {
         font-size: 1.5rem;
         min-width: 110px;
     }
     
+    /* suzie's story */
+    .suzie .description p {
+        font-size: 1.15rem;
+    }
+
+    /* blogs */
     h3 {
         font-size: 1.1rem;
         width: 50%;
@@ -659,15 +668,28 @@ h4,
     }
     
     .blogText {
-        font-size: 0.9rem;
+        font-size: 1.15rem;
     }
 
+    /* footer */
     h4 {
         font-size: 1.25rem;
+        clear: both;
+    }
+    
+    .footerLeft li {
+        font-size: 1.15rem;
+        width: 15%;
+        margin-right: 5%;
     }
 
-    .footerLeft li {
-        font-size: 0.9rem;
+    .footerLeft li:nth-child(4) {
+        margin-right: 0;
+        margin-left: 5%;
+    }
+
+    .footerLeft li:nth-child(3) {
+        margin-right: 10%;
     }
 }
 
