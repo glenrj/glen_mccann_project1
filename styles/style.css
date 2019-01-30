@@ -4,6 +4,8 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+.visuallyhidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
+
 /* colours */
 
 /* white: #fcfcfc
@@ -33,6 +35,7 @@ a {
     text-decoration: none;
 }
 
+
 i {
     color: white;
 }
@@ -60,19 +63,6 @@ h3 {
     font-size: 1.75rem;
     text-transform: uppercase;
 }
-
-.button {
-    font-family: "Cormorant Garamond", serif;
-    text-transform: uppercase;
-    font-size: 0.9rem;
-    color: #152d20;
-    background: white;
-    padding: 17px 15.5px;
-    font-weight: 600;
-    line-height: 1.61;
-    transition: 0.3s;
-}
-
 /* styles for multiple sections  */
 
 .suzie,
@@ -83,6 +73,72 @@ h3 {
 
 .content {
     padding: 10%;
+}
+
+/* buttons and hover states */
+
+.button {
+    font-family: "Cormorant Garamond", serif;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    color: #152d20;
+    background: white;
+    padding: 17px 15.5px;
+    font-weight: 600;
+    line-height: 1.61;
+}
+
+.button:hover {
+    background: navajowhite;
+    border: 0.5px solid #152d20;
+    transition: 0.3s;
+}
+
+.suzie .button:hover{
+    border: none;
+}
+
+a:hover {
+    color: navajowhite;
+}
+
+i:hover,
+.subscribe:hover {
+    color: navajowhite; 
+    transition: 0.3s;
+}
+
+.topNav a:hover,
+footer a:hover {
+    color: navajowhite;
+    border-bottom: 1px solid navajowhite;
+}
+
+.blogText .button:hover {
+    background: navajowhite;
+    color: #152d20;
+}
+
+/* skip link styles */
+/* basic styles from notes, updated to match site */
+
+.skip-link {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  padding: 5px;
+  background: #c3d3cb;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+}
+
+.skip-link:focus {
+  left: 50%;
+}
+
+.skip-link:visited {
+    color: black;
 }
 
 /* header styles */
@@ -286,6 +342,7 @@ h1 {
 .blogText .button {
     background: #152d20;
 }
+
 
 /* footer styles */
 

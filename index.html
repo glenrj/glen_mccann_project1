@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+    <!-- SKIP LINK -->
+    <a href="#maincontent" class="skip-link">Skip to main content.</a>
     <!-- HEADER -->
    <header class="wrapper clearfix">
        <!-- main nav bar -->
@@ -40,7 +42,7 @@
        </nav>
    </header>
    <!-- MAIN SECTION -->
-   <main>
+   <main id="maincontent">
        <!-- Suzie's Story -->
         <section class="suzie wrapper">
             <div class="content clearfix">
@@ -73,15 +75,15 @@
         <section class="spotlight wrapper">
             <div class="content clearfix">
                 <div class="spotlightItem">
-                    <i class="fas fa-paw"></i>
+                    <a href="#"><i class="fas fa-paw"></i></a>
                     <p>Animal Spotlight</p>
                 </div>
                 <div class="spotlightItem">
-                    <i class="fas fa-calendar-check"></i>
+                    <a href="#"><i class="fas fa-calendar-check"></i></a>
                     <p>Events</p>
                 </div>
                 <div class="spotlightItem">
-                    <i class="fas fa-shopping-bag"></i>
+                    <a href="#"><i class="fas fa-shopping-bag"></i></a>
                     <p>Merch</p>
                 </div>
             </div>
@@ -136,7 +138,8 @@
                 <h4>Stay Updated</h4>
                 <p>Subscribe to our newsletter to stay updated.</p>
                 <form action="">
-                    <input type="text" placeholder="email address" class="email">
+                    <label for="email" class="visuallyhidden">Email</label>
+                    <input type="text" placeholder="email address" class="email" id="email">
                     <input type="submit" value="Subscribe" class="subscribe">
                 </form>
             </div>
